@@ -1,0 +1,16 @@
+{
+    "emailAlreadyRegistered": {
+        "field": "email",
+        "message": "This email is already registered."
+    },
+    "passwordTooShort": {
+        "field": "password",
+        "message": "Password must be at least 8 characters long."
+    },
+    "internalServerError": {
+        "message": "Internal Server Error"
+    },
+    "failedToRegister": {
+        "message": "Failed to register"
+    }
+}

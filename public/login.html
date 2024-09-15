@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riget Zoo Adventures - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .image-column {
+            flex: 1;
+            max-width: 20%;
+            padding: 20px;
+        }
+        .form-column {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+        .error {
+            color: red;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .image-column, .form-column {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <a href="/home">
+        <h1>Riget Zoo Adventures</h1>
+    </a>
+  </header>
+
+    <div class="container">
+        <div class="image-column">
+            <img src="./img/animal-lg-2.png" alt="Sample image">
+        </div>
+        <div class="form-column">
+            <form id="login" method="POST" action="/login">
+                <div class="error">{{generalError}}</div> <!-- General error display -->
+                <div>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter a valid email address" required>
+                    <div class="error">{{emailError}}</div> <!-- Email specific error -->
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+                    <div class="error">{{passwordError}}</div> <!-- Password specific error -->
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/signup" class="link-danger">Register</a></p>
+            </form>
+            
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © 2020. All rights reserved.
+    </div>
+</body>
+</html>

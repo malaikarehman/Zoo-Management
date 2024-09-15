@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riget Zoo Adventures - Learn & Earn</title>
+    <style>
+         header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        header a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+            background-color: #007bff; /* Primary blue */
+            cursor: pointer;
+        }
+        .btn-info {
+            background-color: #5bc0de; /* Info blue */
+        }
+        .btn-outline-primary {
+            background-color: transparent;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+        .progress {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            height: 20px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            background-color: #007bff;
+            height: 100%;
+            width: 50%; /* Dynamically adjust this width based on actual values */
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/home">
+            <h1>Riget Zoo Adventures</h1>
+        </a>
+    </header>
+<div class="container">
+    <h1 class="mb-4">Riget Zoo Adventures: Learn & Earn</h1>
+    
+    <!-- User Account Overview -->
+    <div class="user-account-section mb-5">
+        <h2>My Account</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5>Your Loyalty Points</h5>
+                <p>You currently have <span id="userPoints">500</span> points.</p>
+                <button class="btn" onclick="updatePoints()">Update My Points</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Educational Materials Access -->
+    <div class="educational-section mb-5">
+        <h2>Educational Materials</h2>
+        <div class="row">
+            <!-- Placeholder for dynamic content or static educational materials -->
+        </div>
+    </div>
+
+    <!-- Loyalty and Rewards Interface -->
+    <div class="loyalty-section">
+        <h2>Loyalty Rewards</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="progress mb-3">
+                    <div class="progress-bar">50% to Next Reward</div>
+                </div>
+                <a href="/loyality-board" class="btn btn-info">View Rewards</a>
+                <a href="/educational-material" class="btn btn-outline-primary">Educational Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function updatePoints() {
+    // Mock function for updating points - In a real-world scenario, this would interact with a server
+    alert('This feature needs server interaction to work.');
+}
+</script>
+</body>
+</html>

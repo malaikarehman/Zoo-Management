@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Rewards - Riget Zoo Adventures</title>
+    <style>
+         header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        header a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+        h1, h2, h5 {
+            text-align: center;
+        }
+        .progress {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            height: 20px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .progress-bar {
+            background-color: #007bff;
+            height: 100%;
+            width: 60%; /* Adjust based on actual values */
+            text-align: center;
+            color: white;
+            line-height: 20px; /* Align text vertically */
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures spacing is distributed */
+            height: 400px; /* Fixed height for all cards */
+        }
+        .card-img-top {
+            width: 100%;
+            height: 160px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures the image covers the area properly */
+            border-radius: 5px;
+        }
+        .btn {
+            display: block;
+            padding: 10px 15px;
+            margin: 10px auto;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #007bff; 
+            cursor: pointer;
+        }
+        .btn-secondary {
+            background-color: #6c757d; 
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .col-md-4 {
+            flex: 0 0 32%;
+            max-width: 32%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.button-container .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #6c757d; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.button-container .btn:hover {
+    background-color: #5a6268; 
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <a href="/home">
+            <h1>Riget Zoo Adventures</h1>
+        </a>
+    </header>
+<div class="container">
+    <h1>Loyalty Rewards Dashboard</h1>
+    
+    <!-- Current Points and Progress -->
+    <div>
+        <h2>Your Current Points: 1200</h2>
+        <div class="progress">
+            <div class="progress-bar">60% to Next Tier</div>
+        </div>
+    </div>
+
+    <!-- Rewards List -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./img/zoo ticket.png" class="card-img-top" alt="Free Ticket">
+                <div class="card-body">
+                    <h5>Free Ticket</h5>
+                    <p>Redeem 1000 points for a free entry ticket.</p>
+                    <button class="btn" >Redeem</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./img/merchandise.pngzoo ticket.png" class="card-img-top" alt="Exclusive Merchandise">
+                <div class="card-body">
+                    <h5>Exclusive Merchandise</h5>
+                    <p>Redeem 500 points for exclusive zoo merchandise.</p>
+                    <button class="btn" >Redeem</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./img/zoo tour.pngzoo ticket.png" class="card-img-top" alt="Special Tour">
+                <div class="card-body">
+                    <h5>Special Guided Tour</h5>
+                    <p>Redeem 1500 points for a special guided tour of the zoo.</p>
+                    <button class="btn" >Redeem</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+
+        <a href="/educational-material" class="btn btn-secondary">Educational Dashboard</a>
+    </div>
+    </div>
+</body>
+</html>

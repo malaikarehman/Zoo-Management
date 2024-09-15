@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Booking System - Riget Zoo Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2, h5 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="date"],
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .col-md-6 {
+            width: 48%;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn-secondary {
+    background-color: #6c757d;
+}
+.btn {
+    padding: 8px 12px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        header a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        header h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/home.html">
+            <h1>Riget Zoo Adventures</h1>
+        </a>
+    </header>
+
+    <div class="container">
+        <h2>Book Your Adventure</h2>
+        <form action="/book" method="post"> <!-- Form for booking submission -->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="bookingDate">Choose Date</label>
+                    <input type="date" id="bookingDate" name="bookingDate" required>
+
+                    <label for="ticketType">Ticket Type</label>
+                    <select id="ticketType" name="ticketType" required>
+                        <option selected>Choose...</option>
+                        <option value="single">Single Ticket</option>
+                        <option value="family">Family Pack</option>
+                        <option value="group">Group Ticket</option>
+                    </select>
+
+                    <label for="hotelRoom">Hotel Room</label>
+                    <select id="hotelRoom" name="hotelRoom" required>
+                        <option selected>Choose...</option>
+                        <option value="standard">Standard Room</option>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>Payment Information</h5>
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cvc">CVC</label>
+                        <input type="text" id="cvc" name="cvc" placeholder="CVC" required>
+                    </div>
+                </div>
+                <button type="submit" style="background-color: #28a745;">Submit Payment</button>
+                <a href="./dashboard" class="btn btn-secondary">Dashboard</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>

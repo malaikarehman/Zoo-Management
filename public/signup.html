@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riget Zoo Adventures - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        header a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .card {
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        .form-control, .btn, .form-check-label {
+            display: block;
+            width: 100%;
+            padding: 10px;
+        }
+        .form-control {
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .form-check-label {
+            margin: 10px 0;
+        }
+        .error {
+        color: red;
+        font-size: 0.8rem; 
+        margin-bottom: 10px; 
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/home">
+            <h1>Riget Zoo Adventures</h1>
+        </a>
+    </header>
+    <section>
+        <div class="card">
+            <h2>Sign up</h2>
+            <form id="signup" method="POST" action="/signup">
+                <input type="text" id="username" name="username" class="form-control" placeholder="Your Name" value="{{username}}" required>
+                <div class="error">{{usernameError}}</div>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" value="{{email}}" required>
+                <div class="error">{{emailError}}</div>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="{{password}}" required minlength="8">
+                <div class="error">{{passwordError}}</div>
+                <button type="submit" class="btn">Register</button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Already have an accoutn? <a href="/login" class="link-danger">Login</a></p>
+            </form>           
+        </div>
+    </section>     
+        
+</body>
+</html>
+

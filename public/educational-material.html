@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riget Zoo Adventures - Learn & Earn</title>
+    <style>
+         header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        header a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures content is spaced out */
+            height: 100%;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-md-4 {
+            flex: 0 0 32%;
+            max-width: 32%;
+            box-sizing: border-box;
+            padding: 10px;
+            display: flex;
+            align-items: stretch; /* Ensures the cards stretch to fill the height */
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Set a fixed height for images */
+            object-fit: cover; /* Ensures the image covers the area without distorting */
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+            width: auto;
+            cursor: pointer;
+        }
+        .btn-warning {
+            background-color: #f0ad4e;
+        }
+        .btn-success {
+            background-color: #5cb85c;
+        }
+        .btn-info {
+            background-color: #5bc0de;
+        }
+        .btn-outline-primary {
+            background-color: transparent;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+        .progress {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            height: 20px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            background-color: #007bff;
+            height: 100%;
+            line-height: 20px;
+            text-align: center;
+            color: white;
+            width: 50%; /* Adjust this to represent the actual value dynamically */
+        }
+        .card-body {
+            flex-grow: 1; /* Allows the body to expand and fill space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Aligns items to top and bottom */
+        }
+        .card-title, .card-text {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/home">
+            <h1>Riget Zoo Adventures</h1>
+        </a>
+    </header>
+<div class="container">
+    <h1>Riget Zoo Adventures: Learn & Earn</h1>
+    
+    <!-- Educational Materials Access -->
+    <div class="educational-section">
+        <h2>Educational Materials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/quiz.png" class="card-img-top" alt="Interactive Quiz">
+                    <div class="card-body">
+                        <h5 class="card-title">Interactive Quizzes</h5>
+                        <p class="card-text">Test your knowledge about the animal kingdom.</p>
+                        <a href="/quiz" class="btn btn-warning">Start Quiz</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/guide.png" class="card-img-top" alt="Downloadable Guides">
+                    <div class="card-body">
+                        <h5 class="card-title">Downloadable Guides</h5>
+                        <p class="card-text">Get our free guides and worksheets for your visit or classroom.</p>
+                        <a href="/zoo-guide" class="btn btn-success">Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loyalty and Rewards Interface -->
+    <div class="loyalty-section">
+        <h2>Loyalty Rewards</h2>
+        <p class="lead">Earn points and get rewards with every visit!</p>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Your Rewards Dashboard</h5>
+                <p class="card-text">Check your points, redeem rewards, and see your progress.</p>
+                <div class="progress">
+                    <div class="progress-bar">50% to Next Reward</div>
+                </div>
+                <a href="/loyality-show" class="btn btn-info">View Rewards</a>
+                <a href="/loyality" class="btn btn-outline-primary">Earn More Points</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
